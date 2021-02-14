@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  height: 50px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 20px;
+  z-index: 1;
+}
+
+#navbarlogo {
+  height: 40px;
+}
+
+#navbarlink {
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding-right: 20px;
+}
+
+nav a:hover {
+  color: yellow;
+}
+
+#welcome {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: rgb(1, 1, 146);
+  background-image: url(imgs/logor.svg);
+  background-position: right;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+
+#title {
+  font-size: 4rem;
+  font-weight: 300;
+  color: yellow;
+  margin-left: 50px;
+  transition: 0.3s;
+  transform-origin: left top;
+}
+
+#title:hover {
+  transform: scale(1.5);
+}
+
+#important {
+  font-weight: bold;
+}
+
+#blocprojet {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.site {
+  width: 21%;
+  background-color: rgb(1, 1, 146);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  margin-bottom: 50px;
+  box-shadow: 10px 10px yellow;
+}
+
+.siteimg {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid white;
+}
+
+.siteimglink {
+  width: 95%;
+  filter: grayscale(1);
+}
+
+.siteimglink:hover {
+  filter: unset;
+}
+
+.sitetitre {
+  color: white;
+  font-size: 1.5rem;
+}
